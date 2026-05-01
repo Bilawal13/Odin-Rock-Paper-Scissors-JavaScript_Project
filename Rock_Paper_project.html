@@ -8,10 +8,66 @@
 </head>
 
 <body>
+    <div class="main">
+        <div id="score">
+            <h3> Human Score : <span id="humanScore">0</span></h3>
+            <h3> Computer Score : <span id="computerScore">0</span> </h3>
+        </div>
+        <div id="result">
+            <span id="display"> </span>
+        </div>
+        <div id="image">
+            <img src="rock-paper-scissors-clip-art-7.jpeg" alt="img">
+        </div>
+        <div id="Buttons">
+            <button id="btn1">rock </button>
+            <button id="btn2">paper</button>
+            <button id="btn3">scissors</button>
+        </div>
+
+    </div>
 
     <script src="Project.js"></script>
 </body>
+<style>
+    body {
+        background-color: #fcfefd;
+    }
 
+    .main {
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 350px 1fr;
+        justify-items: center;
 
+        align-items: center;
+    }
+
+    #btn1 {
+        background-color: #416eba;
+        border: #416eba 1px;
+        width: 60px;
+        height: 20px;
+        border-radius: 10%;
+    }
+
+    #btn2 {
+        background-color: #f5c146;
+        border: #f5c146 1px;
+        width: 60px;
+        height: 20px;
+        border-radius: 10%;
+    }
+
+    #btn3 {
+        background-color: #ed5b48;
+        border: #ed5b48 1px;
+        width: 60px;
+        height: 20px;
+        border-radius: 10%;
+    }
+</style>
 
 </html>
